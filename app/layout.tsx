@@ -36,9 +36,6 @@ async function getSiteSettings() {
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const { data } = await getSiteSettings();
-  console.log(data);
-
   return (
     <html lang="en">
       <body>{children}</body>
